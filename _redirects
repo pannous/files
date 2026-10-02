@@ -1,0 +1,9 @@
+/safe https://safe.pannous.com/ 301
+/safe/* https://safe.pannous.com/:splat 301
+/private https://private.pannous.com/ 301
+/private/* https://private.pannous.com/:splat 301
+/ggml-base.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin 301
+/ggml-large-v1.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v1.bin 301
+/ggml-large-v2.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2.bin 301
+/ggml-large-v3.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin 301
+/ggml-medium.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin 301
