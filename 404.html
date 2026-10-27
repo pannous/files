@@ -1,0 +1,10 @@
+<!doctype html><!-- generated redirect page --><meta charset="utf-8"><title>Not found</title>
+<script>
+const rules = [["/safe", "https://safe.pannous.com/"], ["/safe/*", "https://safe.pannous.com/:splat"], ["/private", "https://private.pannous.com/"], ["/private/*", "https://private.pannous.com/:splat"], ["/ggml-base.bin", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin"], ["/ggml-large-v1.bin", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v1.bin"], ["/ggml-large-v2.bin", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v2.bin"], ["/ggml-large-v3.bin", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin"], ["/ggml-medium.bin", "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin"]];
+const path = decodeURIComponent(location.pathname);
+for (const [source, target] of rules) {
+  const splat = source.endsWith("/*") && path.startsWith(source.slice(0, -1)) ? path.slice(source.length - 1) : null;
+  if (path === source || splat !== null) { location.replace(target.replace(":splat", splat ?? "") + location.search); break; }
+}
+</script>
+<h1>Not found</h1>
